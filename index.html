@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>v0 App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Create Your Account</h1>
+        <p>Join us today and get started</p>
+      </div>
+      <div class="form-container">
+        <h2>Registration Form</h2>
+        <p>Please fill all required fields to create your account</p>
+        <form action="" id="regForm">
+          <h3>Personal Information</h3>
+          <div class="personal-info">
+            <div class="form-group first-name">
+              <label for="first-name" class="name-label">First Name *</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="John"
+              />
+              <div class="errorMessage" id="errorFirstName"></div>
+            </div>
+            <div class="form-group last-name">
+              <label for="last-name" class="name2-label">Last Name * </label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Doe"
+              />
+              <div class="errorMessage" id="errorLastName"></div>
+            </div>
+            <div class="form-group email">
+              <label for="email" class="email-label">Email Address * </label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="john.doe@example.com"
+              />
+              <div class="errorMessage" id="emailError"></div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value="+251"
+                placeholder="+251 912 345 678"
+              />
+              <div class="errorMessage" id="phoneError"></div>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender">
+                <option value="" disabled selected hidden>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+              <div class="errorMessage" id="genderError"></div>
+            </div>
+          </div>
+          <h3>Address Information</h3>
+          <div class="address-info">
+            <div class="form-group street">
+              <label for="street">Street Address *</label>
+              <input
+                type="text"
+                id="street"
+                name="street"
+                placeholder="123 Main Street"
+              />
+              <div class="errorMessage" id="streetError"></div>
+            </div>
+            <div class="form-group">
+              <label for="city">City *</label>
+              <input type="text" id="city" name="city" placeholder="New York" />
+              <div class="errorMessage" id="cityError"></div>
+            </div>
+            <div class="form-group">
+              <label for="state">State/Province</label>
+              <input type="text" id="state" name="state" placeholder="NY" />
+              <div class="errorMessage" id="stateError"></div>
+            </div>
+            <div class="form-group">
+              <label for="zip">ZIP/Postal Code *</label>
+              <input type="number" id="zip" name="zip" placeholder="10001" />
+              <div class="errorMessage" id="zipError"></div>
+            </div>
+            <div class="form-group country">
+              <label for="country">Select country</label>
+              <select id="country" name="country">
+                <option value="" selected disabled hidden>
+                  Select Country
+                </option>
+                <option value="ET">Ethiopia</option>
+                <option value="AF">Afghanistan</option>
+                <option value="AL">Albania</option>
+                <option value="DZ">Algeria</option>
+                <option value="AD">Andorra</option>
+                <option value="AO">Angola</option>
+                <option value="AR">Argentina</option>
+                <option value="AM">Armenia</option>
+                <option value="AU">Australia</option>
+                <option value="AT">Austria</option>
+                <option value="AZ">Azerbaijan</option>
+                <option value="BD">Bangladesh</option>
+                <option value="BE">Belgium</option>
+                <option value="BJ">Benin</option>
+                <option value="BO">Bolivia</option>
+                <option value="BW">Botswana</option>
+                <option value="BR">Brazil</option>
+                <option value="BG">Bulgaria</option>
+                <option value="BF">Burkina Faso</option>
+                <option value="BI">Burundi</option>
+                <option value="CM">Cameroon</option>
+                <option value="CA">Canada</option>
+                <option value="TD">Chad</option>
+                <option value="CL">Chile</option>
+                <option value="CN">China</option>
+                <option value="CO">Colombia</option>
+                <option value="HR">Croatia</option>
+                <option value="CY">Cyprus</option>
+                <option value="CZ">Czech Republic</option>
+                <option value="DK">Denmark</option>
+                <option value="DJ">Djibouti</option>
+                <option value="EG">Egypt</option>
+                <option value="FI">Finland</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                <option value="GH">Ghana</option>
+                <option value="GR">Greece</option>
+                <option value="IN">India</option>
+                <option value="ID">Indonesia</option>
+                <option value="IR">Iran</option>
+                <option value="IQ">Iraq</option>
+                <option value="IE">Ireland</option>
+                <option value="IL">Israel</option>
+                <option value="IT">Italy</option>
+                <option value="JP">Japan</option>
+                <option value="KE">Kenya</option>
+                <option value="KR">South Korea</option>
+                <option value="MX">Mexico</option>
+                <option value="MA">Morocco</option>
+                <option value="NA">Namibia</option>
+                <option value="NP">Nepal</option>
+                <option value="NG">Nigeria</option>
+                <option value="NO">Norway</option>
+                <option value="PK">Pakistan</option>
+                <option value="PL">Poland</option>
+                <option value="PT">Portugal</option>
+                <option value="RO">Romania</option>
+                <option value="RU">Russia</option>
+                <option value="SA">Saudi Arabia</option>
+                <option value="ZA">South Africa</option>
+                <option value="ES">Spain</option>
+                <option value="SE">Sweden</option>
+                <option value="CH">Switzerland</option>
+                <option value="TZ">Tanzania</option>
+                <option value="TH">Thailand</option>
+                <option value="TR">Turkey</option>
+                <option value="UG">Uganda</option>
+                <option value="UA">Ukraine</option>
+                <option value="GB">United Kingdom</option>
+                <option value="US">United States</option>
+                <option value="VN">Vietnam</option>
+                <option value="YE">Yemen</option>
+                <option value="ZM">Zambia</option>
+                <option value="ZW">Zimbabwe</option>
+              </select>
+              <div class="errorMessage" id="countryError"></div>
+            </div>
+          </div>
+          <h3>Account Information</h3>
+          <div class="account-info">
+            <div class="form-group">
+              <label for="username">Username *</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="johndoe123"
+              />
+              <div class="errorMessage" id="usernameError"></div>
+            </div>
+            <div class="form-group password-wrapper">
+              <div class="form-group">
+                <label for="passwd">Password *</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                />
+                <i
+                  class="fa-solid fa-eye toggle-eye1"
+                  id="togglePassword"
+                  onclick="toggleVisibility('password', 'togglePassword')"
+                ></i>
+                <div
+                  id="passwordErrorContainer"
+                  style="color: red; margin-top: 0px"
+                >
+                  <!-- Error message header -->
+                  <strong class="errorMessage2" id="passwordHeader" style="display: none"
+                    >Enter valid password</strong
+                  >
+                  <ul class="errorMessage2" id="passwordErrorList"></ul>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="confirm" class="confirm">Confirm Password *</label>
+                <input
+                  type="password"
+                  id="confirm"
+                  name="confirm"
+                  placeholder="Confirm your password"
+                />
+                <i
+                  class="fa-solid fa-eye toggle-eye2"
+                  id="toggleConfirm"
+                  onclick="toggleVisibility('confirm', 'toggleConfirm')"
+                ></i>
+                <div class="errorMessage" id="matchMessage"></div>
+              </div>
+            </div>
+          </div>
+          <h3>Additional Information</h3>
+          <div class="additional-info">
+            <div class="form-group">
+              <label for="occupation">Occupation</label>
+              <input
+                type="text"
+                id="occupation"
+                name="occupation"
+                placeholder="Software Developer"
+              />
+            </div>
+            <div class="form-group">
+              <label for="org">Company/Organization</label>
+              <input type="text" id="org" name="org" placeholder="ACME corp" />
+            </div>
+            <div class="form-group">
+              <label for="bio">Bio/About Yourself</label>
+              <textarea
+                name="bio"
+                id="bio"
+                placeholder="Tell us about your self..."
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="portfolio">Website/Portfolio</label>
+              <input
+                type="url"
+                id="portfolio"
+                name="portfolio"
+                placeholder="https://www.example.com"
+              />
+            </div>
+          </div>
+          <h3>Preferences</h3>
+          <div class="preference">
+            <div class="form-group pref">
+              <input type="checkbox" id="pref1" name="pref1" />
+              <label for="pref1"
+                >Subscribe our newsletter for updates and promotions</label
+              >
+            </div>
+            <div class="form-group pref">
+              <input type="checkbox" id="pref2" name="pref2" />
+              <label for="pref2">Receive marketing communications</label>
+            </div>
+            <div class="form-group pref">
+              <input type="checkbox" id="pref3" name="pref3" required />
+              <label for="pref3"
+                >I agree to the <a href="#">Terms of Service</a> and
+                <a href="#">Privacy Policy</a> *</label
+              >
+            </div>
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
