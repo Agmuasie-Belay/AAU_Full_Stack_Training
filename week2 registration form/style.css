@@ -1,0 +1,191 @@
+/*TODO Add styling to fix the top and bottom*/
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: whitesmoke;
+  
+}
+.container,
+.heading {
+  display: grid;
+  place-items: center;
+}
+h1 {
+  padding: 0;
+  margin: 3rem 0 1rem 0;
+  font-size: 30px;
+  font-size: clamp(1.2rem, 5vw, 1.875rem);
+}
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: clamp(1rem, 4vw, 1.4rem);
+}
+h3,
+label {
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
+}
+.heading p {
+  padding: 0;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  color: #7e7a7a;
+}
+.container > p {
+  font-size: clamp(0.6rem, 2vw, 1rem);
+}
+.form-container {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 1.2rem;
+  margin: clamp(10px, 4vw, 40px);
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+.form-container p {
+  padding-top: 4px;
+  margin: 0;
+  color: #999;
+  font-size: 14px;
+}
+.form-group {
+  display: grid;
+}
+input,
+select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+label {
+  font-size: 14px;
+  padding: 4px 0 8px 0;
+}
+select {
+  cursor: pointer;
+}
+option {
+  color: blue;
+  padding: 80px;
+}
+option:hover {
+  background-color: #eee;
+}
+.personal-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:0rem 1rem;
+}
+.first-name,
+.last-name {
+  position: static;
+}
+.errorMessage {
+  font-size: 10px;
+  color: red;
+  height:16px;
+}
+.errorMessage2{
+  font-size:10px;
+  color:red;
+}
+.email {
+  grid-column: 1/3;
+}
+.address-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0rem 1rem;
+}
+.street,
+.country {
+  grid-column: 1/4;
+}
+.account-info{
+  display: grid;
+  gap: 0rem 0;
+}
+.account-info .confirm{
+  margin-top:-0.5rem;
+}
+.additional-info {
+  display: grid;
+  gap: 1rem ;
+}
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 4rem;
+  padding: 12px;
+  border-radius: 6px;
+}
+.preference {
+  display: grid;
+  gap: 0.5rem;
+}
+.pref {
+  display: inline-block;
+  line-height: 1.5;
+}
+input[type="checkbox"] {
+  transform: scale(1.2);
+  outline: none;
+  accent-color: rgb(6, 0, 0);
+}
+
+a {
+  color: #007bff;
+}
+button {
+  margin-top: 16px;
+  background: #000;
+  color: white;
+  border-radius: 10px;
+  display: grid;
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #333;
+}
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.toggle-eye1,
+.toggle-eye2 {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+.toggle-eye2 {
+  top: 85%;
+}
+.input-error {
+    border: 1px solid red;
+}
+@media (max-width: 600px) {
+  .personal-info,
+  .address-info {
+    display: block;
+  }
+}
